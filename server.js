@@ -3,6 +3,7 @@ const cryptoJS = require('crypto-js');
 const app = express();
 
 app.use(express.static('public'));
+app.use(express.json());
 app.use('/node_modules', express.static(__dirname + '/node_modules'));
 
 
